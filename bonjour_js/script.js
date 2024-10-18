@@ -1,4 +1,6 @@
 // exo 1
+// etape 2
+
 //let message = "Bonjour !"
 //console.log(message)
 
@@ -6,6 +8,47 @@
 //message = "Bonjour " + firstName + " !"
 
 //console.log(message)
+
+// etape 3
+//function sayHello(firstName)
+//{
+//let message = "Bonjour !"
+//message = "Bonjour " + firstName + " !"
+
+//console.log(message)
+//}
+
+//sayHello("Beyonce")
+
+// etape 4
+
+//function sayHello(firstName, hour)
+//{
+//if (hour >= 18){
+//    console.log("Bonsoir " + firstName + " !")}
+//    
+//else{
+//    console.log("Bonjour " + firstName + " !")}
+//}
+
+//sayHello("Beyonce", 11)
+//sayHello("Beyonce", 18)
+//sayHello("Beyonce", 22)
+
+// etape 6
+
+resultat = window.prompt("Entre un prénom", "Prénom")
+
+function sayHello(firstName)
+{
+let message = "Bonjour !"
+message = "Bonjour " + firstName + " !"
+
+document.querySelector('h1').innerText = message;
+}
+
+sayHello(resultat)
+
 
 //exo 2
 //function sayHello(name)
@@ -85,22 +128,22 @@
 //square(2)
 
 //Pratiquer - Exo 2.2
-function square(number1)
-{
-    return(number1 * number1)
-}
+//function square(number1)
+//{
+//    return(number1 * number1)
+//}
 
-let number1 = 3
-let result = square(number1)
+//let number1 = 3
+//let result = square(number1)
 
-console.log(square(number1))
+//console.log(square(number1))
 
-function multiply10(result)
-{
-    console.log(result * 10)
-}
+//function multiply10(result)
+//{
+//    console.log(result * 10)
+//}
 
-multiply10(result)
+//multiply10(result)
 
 //Pratiquer - Exo 2.3
 
