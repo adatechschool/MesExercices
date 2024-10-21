@@ -1,0 +1,11 @@
+html{
+background-color: powderblue;
+font-family: 'Gill Sans';
+color: rgb(61, 106, 220);
+text-align: center;
+}
+
+img{
+border-radius: 50%;
+border: 5px solid rgb(105, 145, 255);
+}
