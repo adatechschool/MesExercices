@@ -56,27 +56,70 @@
 //howIsTheWeather(35);
 //howIsTheWeather(temperature);
 
-let temp = 25 ;
-let message;
+// let temp = 0 ;
+// let message;
 
-switch (true) {
-  case 0 :
-    message = "Freezing weather.";
-    break;
-  case temp < 10:
-    message = "Very cold weather.";
-    break;
-  case temp < 20:
-    message = "Cold weather.";
-    break;
-  case temp < 30:
-    message = "Normal in temp.";
-    break;
-  case temp < 40:
-    message = "It's hot.";
-    break;
-  case temp > 40:
-    message = "It's very hot.";
-}
+// switch (true) {
+//   case 0 :
+//     message = "Freezing weather.";
+//     break;
+//   case temp < 10:
+//     message = "Very cold weather.";
+//     break;
+//   case temp < 20:
+//     message = "Cold weather.";
+//     break;
+//   case temp < 30:
+//     message = "Normal in temp.";
+//     break;
+//   case temp < 40:
+//     message = "It's hot.";
+//     break;
+//   case temp > 40:
+//     message = "It's very hot.";
+// }
 
-console.log(message);
+// console.log(message);
+
+
+//What number's bigger?
+// function greaterNum(num1, num2){
+//     if (num1 > num2){console.log("The greater number of " + num1 + " and " + num2 + " is " + num1 + ".")
+//     } else {console.log("The greater number of " + num1 + " and " + num2 + " is " + num2 + ".")}
+// }
+
+// greaterNum(12, 28)
+// greaterNum(5, 8)
+
+//The World Translator
+
+// function helloWorld(language){
+//     if (language == "es"){console.log("Hola mundo!")
+//         } else 
+//     if (language == "pt"){console.log("Oi mundo!")
+//         } else 
+//     if (language == "fr"){console.log("Salut monde !")
+//         } else {console.log("Hello world!")}
+// }
+
+// helloWorld("pt")
+// helloWorld("es")
+// helloWorld("es")
+// helloWorld("de")
+
+//The Grade Assigner
+assignGrade(score){
+if (score >= 18){console.log("Congrats, you've got an A")
+    } else
+if (score < 18 && score >= 16){console.log("Hey, you've got a B")
+    } else
+if (score < 16 && score >= 14){console.log("Hey, you've got a C")
+    } else
+if (score < 14 && score >= 12){console.log("Hey, you've got a D")
+    } else {console.log("Ouch, you've got a F")
+}}
+
+assignGrade(13)
+assignGrade(19)
+assignGrade(8)
+assignGrade(16)
