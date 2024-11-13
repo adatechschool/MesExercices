@@ -108,18 +108,35 @@
 // helloWorld("de")
 
 //The Grade Assigner
-assignGrade(score){
-if (score >= 18){console.log("Congrats, you've got an A")
-    } else
-if (score < 18 && score >= 16){console.log("Hey, you've got a B")
-    } else
-if (score < 16 && score >= 14){console.log("Hey, you've got a C")
-    } else
-if (score < 14 && score >= 12){console.log("Hey, you've got a D")
-    } else {console.log("Ouch, you've got a F")
-}}
+// function assignGrade(score){
+// if (score >= 18){console.log("Congrats, you've got an A")
+//     } else
+// if (score < 18 && score >= 16){console.log("Hey, you've got a B")
+//     } else
+// if (score < 16 && score >= 14){console.log("Hey, you've got a C")
+//     } else
+// if (score < 14 && score >= 12){console.log("Hey, you've got a D")
+//     } else{console.log("Ouch, you've got a F")
+// }}
 
-assignGrade(13)
-assignGrade(19)
-assignGrade(8)
-assignGrade(16)
+// assignGrade(13)
+// assignGrade(19)
+// assignGrade(8)
+// assignGrade(16)
+
+//The Pluralizer
+// function pluralize(noun, number){
+//     if (number > 1) {console.log(number + noun + "s")
+
+//     } else {console.log(number + noun)} 
+// }
+
+// pluralize(" cat", 4)
+// pluralize(" dog", 1)
+// pluralize(" bird", 3)
+
+//Even or Odd
+function evenOrOdd(number) {
+    if (number % 2 == 0){return (number = "Even")
+   } else {return(number = "Odd")}
+  }
