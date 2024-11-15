@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <h1>Le jeu des allumettes</h1>
+
+    <p id="gameText">
+     <!-- Le texte du jeu sera injecté ici par JavaScript -->
+    </p>
+
+    <p id="comment"> 
+     <!-- Les indications du jeu seront injecté ici par JavaScript -->
+    </p>
+    <input id="userInput">
+    <button> OK </button>
+
     <div id="matchesContainer" > 
         <p>Allumettes restantes :</p>
-        <div id="matchesNumber"></div>
+        <p id="matchesNumber"></p>
     </div>
 </body>
 </html>
