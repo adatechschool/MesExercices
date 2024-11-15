@@ -37,24 +37,24 @@
 //Sinon, si la température est inférieure à 40, on affiche "It's hot"
 //Sinon, on affiche "It's very hot"
 
-//let temperature = 15 ;
+let temperature = 15 ;
 
-//function howIsTheWeather(temp){
-//  if (temp < 0){console.log("Freezing weather.")
-//  } else
-//    if (temp < 10) {console.log("Very cold weather.")
-//    } else 
-//      if (temp < 20) {console.log("Cold weather.")
-//      } else 
-//        if (temp < 30) {console.log("Normal in temp.")
-//        } else 
-//          if (temp < 40) {console.log("It's hot.")
-//          } else {console.log("It's very hot.")}
-// } ;
+function howIsTheWeather(temp){
+ if (temp < 0){console.log("Freezing weather.")
+ } else if (temp < 10) {
+console.log("Very cold weather.")
+   } else if (temp < 20) {
+    console.log("Cold weather.")
+     } else if (temp < 30) {
+        console.log("Normal in temp.")
+       } else if (temp < 40) {
+        console.log("It's hot.")
+         } else {console.log("It's very hot.")}
+} ;
 
-//howIsTheWeather(15);
-//howIsTheWeather(35);
-//howIsTheWeather(temperature);
+howIsTheWeather(15);
+howIsTheWeather(35);
+howIsTheWeather(temperature);
 
 // let temp = 0 ;
 // let message;
