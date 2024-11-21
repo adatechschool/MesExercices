@@ -1,5 +1,3 @@
-
-
 function isValidDateFormat(datestring){
     const regex = /^(\d{2})\/(\d{2})\/(\d{4})$/;
         return regex.test(datestring);
@@ -43,20 +41,27 @@ function isPalindrome(datestring){
 
     const dateString = cleanDate(datestring);
     const reversedString = dateString.split("").reverse().join("");
-    console.log(reversedString);
 
     if (dateString === reversedString){
-        console.log("Cette date est un palindrome !");
+        console.log(`${datestring} est un palindrome !`);
     } else {
-        console.log("Cette date n'est pas un palindrome !");
+        console.log(`${datestring} n'est pas un palindrome !`);
         return false;
     }
 
 }
 
+function getNextPalindromes(num){
 
-// isValidDate("29/02/2028");
-// isValidDate("32/02/2028");
-// isValidDate("26/09/1986");
+    const numberOfPalindromes = num;
+    
+    let n = 0;
+    while (n < num){
+        n++;
+    }
+
+}
+
+
 isPalindrome("26/09/1999");
 isPalindrome("11/02/2011");
