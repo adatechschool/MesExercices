@@ -1,10 +1,17 @@
+//Etape 6
+// const gameText = document.getElementById("gameText");
+// const comment = document.getElementById("comment");
+// const userInput = document.getElementById("userInput");
+// const matchesContainer = document.getElementById("matchesContainer");
+// const matchesNumber = document.getElementById("matchesNumber");
+
+
 //Etape 5
 
 let numberOfMatches = 50;  //nombre d'allumettes (initialisé à 50)
 let userNumber;            //nombre choisi par l'utilisateur
 let currentPlayer = 1;     //joueur en action (initialisé à 1)
 let numberOfPlayers;       //nombre de joueurs
-
 
 function gameStart(){  //déclaration de fonction qui demande le nombre de joueurs en début de partie
 numberOfPlayers = parseInt(prompt("Combien de joueurs êtes-vous ?"))
@@ -52,7 +59,6 @@ function game(){ //déclaration de fonction game
 
         removeMatch(userNumber) //appel de la fonction qui enlève des allumettes
         
-
         if (numberOfMatches <= 0){ // fin du jeu et de la boucle, quand le nombre d'allumettes atteint 0
             console.log("Plus d'allumettes, joueur " + currentPlayer + " vous avez gagné !");
             break
@@ -62,7 +68,6 @@ function game(){ //déclaration de fonction game
         
     }        
 }
-
 
 game()
 
