@@ -33,7 +33,7 @@ function cleanDate(datestring){  //fonction qui "nettoie" la date
     return datestring.replace(slashes, ""); // on les supprime avec la méthode replace
 }
 
-function isPalindrome(datestring){ //fonction qui vérifie que la date est un palindrome
+function isDatePalindrome(datestring){ //fonction qui vérifie que la date est un palindrome
     if (!isValidDate(datestring)){ //d'abord on appelle la fonction isValidDate, pour vérifier que la date est valide (bon format + existante)
         console.log("La date n'est pas valide !"); //Si ce n'est pas le cas on affiche un message dans la console
         return false;
@@ -66,7 +66,7 @@ function getNextPalindromes(num){ //fonction qui renvoie le nombre (argument) de
     while (numberOfFoundPalindromes < num){ // boucle while qui continue tant que le nbre de palindromes trouvés est inférieur au nombre passé en argument :
         const formattedDate = formatDate(currentDate); //on formate la date courante en string et avec des slash  
     
-        if (isPalindrome(formattedDate)){  //on appelle la fonction isPalindrome avec la date formatée, qui vérifie si la date est un palindrome
+        if (isDatePalindrome(formattedDate)){  //on appelle la fonction isDatePalindrome avec la date formatée, qui vérifie si la date est un palindrome
                numberOfFoundPalindromes++; // si c'est un palindrome, on incrémente la variable numberOfFoundPalindromes de 1
         }
 
@@ -75,8 +75,25 @@ function getNextPalindromes(num){ //fonction qui renvoie le nombre (argument) de
 
 }
 
+function isPalindrome(word){ //fonction qui vérifie qu'une string est un palindrome
 
-isPalindrome("26/09/19969");
-isPalindrome("11/02/2011");
 
-getNextPalindromes(23);
+    const reversedWord = word.split("").reverse().join(""); //dans une autre variable, on met word dans un tableau (split), 
+                                                            //on renverse le tableau (reverse), on concatène les éléments dans une string (join)
+    if (word === reversedWord){  //on compare les deux variables (à l'endroit et à l'envers)
+        console.log(`${word} est un palindrome !`); //si les deux variables sont égales, c'est un palindrome !
+        return word === reversedWord ;
+    } else {
+        console.log(`${word} n'est pas un palindrome !`);
+        return false;
+    }
+}
+
+isDatePalindrome("32/09/1939");
+isDatePalindrome("11/02/2011");
+
+getNextPalindromes(3);
+
+isPalindrome("kayak");
+isPalindrome("32123");
+
