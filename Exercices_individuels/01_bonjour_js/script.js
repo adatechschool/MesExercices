@@ -22,9 +22,10 @@
 
 // etape 4
 
+//let startHourOfEvening = 18;
 //function sayHello(firstName, hour)
 //{
-//if (hour >= 18){
+//if (hour >= startHourOfEvening){
 //    console.log("Bonsoir " + firstName + " !")}
 //    
 //else{
@@ -37,12 +38,11 @@
 
 // etape 6
 
-resultat = window.prompt("Entre un prénom", "Prénom")
+let resultat = window.prompt("Entre un prénom", "Prénom")
 
 function sayHello(firstName)
 {
-let message = "Bonjour !"
-message = "Bonjour " + firstName + " !"
+let message =  "Bonjour " + firstName + " !"
 
 document.querySelector('h1').innerText = message;
 }
