@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "exoAPIMeteo.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "keywords": [],
   "author": "",
@@ -11,7 +12,9 @@
   "description": "",
   "devDependencies": {
     "@eslint/js": "^9.17.0",
+    "@vitest/coverage-v8": "^2.1.8",
     "eslint": "^9.17.0",
-    "globals": "^15.13.0"
+    "globals": "^15.13.0",
+    "vitest": "^2.1.8"
   }
 }
