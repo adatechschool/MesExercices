@@ -1,0 +1,88 @@
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: medium;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 100px 100px 100px 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  grid-template-areas:
+    "header header header header"
+    "bloc-1 bloc-1 bloc-2 bloc-2"
+    "bloc-1 bloc-1 item-1 item-2"
+    "bloc-1 bloc-1 item-3 item-4";
+}
+
+.header {
+  background-color: rgb(211, 211, 211);
+  text-align: center;
+  grid-area: "header";
+}
+
+.bloc-1 {
+  background-color: rgb(170, 81, 81);
+  text-align: center;
+  grid-area: "bloc-1";
+}
+
+.bloc-2 {
+  background-color: rgb(110, 178, 207);
+  text-align: center;
+  grid-area: "bloc-2";
+}
+
+.item-1 {
+  background-color: rgb(149, 204, 97);
+  text-align: center;
+  grid-area: "item-1";
+}
+
+.item-2 {
+  background-color: rgb(149, 204, 97);
+  text-align: center;
+  grid-area: "item-2";
+}
+
+.item-3 {
+  background-color: rgb(149, 204, 97);
+  text-align: center;
+  grid-area: "item-3";
+}
+
+.item-4 {
+  background-color: rgb(149, 204, 97);
+  text-align: center;
+  grid-area: "item-4";
+}
+
+.header {
+  grid-row: 1 / 1;
+  grid-column: 1 / 5;
+  flex-grow: 1;
+}
+
+.bloc-1 {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.bloc-2 {
+  grid-area: 2 / 3 / 2 / 5;
+}
+
+.item-1 {
+  grid-area: 3 / 3 / 3 / 3;
+}
+.item-2 {
+  grid-area: 3 / 4 / 3 / 4;
+}
+.item-3 {
+  grid-area: 4 / 3 / 4 / 3;
+}
+.item-4 {
+  grid-area: 4 / 4 / 4 / 4;
+}
