@@ -1,0 +1,37 @@
+body {
+  font-size: 1em;
+  font-family: "Josefin Sans";
+  background-image: url("./images/bg-pattern-desktop.svg");
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  grid-template-areas:
+    "logo text-container text-container girlPortrait girlPortrait"
+    "text-container text-container text-container girlPortrait girlPortrait"
+    "text-container text-container text-container girlPortrait girlPortrait";
+}
+
+.logo {
+  grid-area: "logo";
+}
+
+.girlPortrait {
+  grid-area: "girlPortrait";
+}
+
+.text {
+  text-align: center;
+  grid-area: "text";
+}
