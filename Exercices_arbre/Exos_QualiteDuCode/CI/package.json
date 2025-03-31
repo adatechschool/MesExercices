@@ -1,0 +1,6 @@
+{
+  "main": "test.js",
+  "scripts": {
+    "test": "node --test"
+  }
+}
